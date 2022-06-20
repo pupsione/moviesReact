@@ -16,13 +16,13 @@ const Search = (props) => {
 
     const handleFilter = (event) => {
         getType(event.target.dataset.type)
-        searchMovies(search, event.target.dataset.typepe);
+        searchMovies(search, event.target.dataset.type);
     };
 
 
     return (
         <div className="row search">
-            <div className="input-field col s6">
+            <div className="input-field">
                 <input
                     type="search"
                     className="validate"

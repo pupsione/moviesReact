@@ -10,7 +10,7 @@ const Main = () => {
     const searchMovies = (str, type = 'all') => {
         setloading(true)
 
-        fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=2be98f07&s=${str}${type !== 'all' ? `&type=${type}` : ''}`)
+        fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=2be98f07&s=${str === '' ? 'matrix' : str}${type !== 'all' ? `&type=${type}` : ''}`)
             .then(response => response.json())
             .then(data => {
                 setMovies(data.Search);

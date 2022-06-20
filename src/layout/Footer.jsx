@@ -4,7 +4,7 @@ function Footer() {
             <div className="wrapper container">
                 <div className="footer-copyright">
                     © {new Date().getFullYear()} Copyright Text
-                    <a className="grey-text text-lighten-4 right" href="#!">Repository</a>
+                    <a className="grey-text text-lighten-4 right" href="https://pupsione.github.io/moviesReact/">Repository</a>
                 </div>
             </div>
         </footer>
